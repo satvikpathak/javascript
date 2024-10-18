@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #5C9EAD;
+}
+
+h2 {
+  color: #326273;
+  font-size: 2.5rem; /* Adjust font size for better responsiveness */
+  text-align: center; /* Center text */
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  max-width: 90vw; /* Allow the container to resize */
+  width: 40vh; /* For larger screens */
+  overflow: hidden; /* Avoid overflow issues */
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.dropDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.dropDown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+}
+
+.select-container select {
+  font-size: 1rem;
+  width: auto;
+}
+
+.msg {
+  margin: 2rem 0;
+}
+
+form button {
+  height: 3rem;
+  background-color: #af4d98;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  .container {
+      width: 90vw; 
+      padding: 1.5rem; 
+  }
+
+  form input,
+  form button {
+      height: 2.5rem;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  form input,
+  form button {
+      height: 2rem;
+      font-size: 0.8rem;
+  }
+
+  .dropDown {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
